@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cur-formulario-fc'`, () => {
+  it(`should have as title 'cur-inscripcion'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cur-formulario-fc');
+    expect(app.title).toEqual('cur-inscripcion');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('cur-formulario-fc app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('cur-inscripcion app is running!');
   });
 });
